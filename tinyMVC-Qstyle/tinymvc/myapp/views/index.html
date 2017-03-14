@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<title>Sam's CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "微軟正黑體", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<div class="w3-top">
+  <div class="w3-bar w3-display-container w3-teal">
+    <div><a href="#" class="w3-bar-item w3-button">Sam's CV</a></div>
+    {if $status == 'no'}
+    <div class="w3-display-right"><a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">管理員登入</a></div>
+    {else}
+      <div class="w3-display-middle"><a href="guestbook/" class="w3-bar-item w3-button">進入管理頁</a></div>
+      <div class="w3-display-right"><a href="guestbook/logout" class="w3-bar-item w3-button">管理者登出</a></div>
+    {/if}
+    <!--<a href="#" class="w3-bar-item w3-button">Link 3</a>-->
+  </div>
+</div>
+<!-- Page Container -->
+<div class="w3-content" style="max-width:1000px;margin-top:45px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/p960x960/16487421_1222522867834139_5712103662287231500_o.jpg?oh=1ab3be369f645eb4bfdd63dc4a9288cb&oe=5941B110" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 class="w3-light-grey">莊智程(Sam)</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>網頁程式設計師</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Taipei, TW</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>chichenchuang@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0972117928</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>專長</b></p>
+          <p>PHP & MySQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+          </div>
+          <p>Javascript & jQuery</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+              <div class="w3-center w3-text-white">70%</div>
+            </div>
+          </div>
+          <p>Python & Raspberry Pi</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
+          </div>
+          <p>Linux</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>語言</b></p>
+          <p>國語</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>英語</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:60%"></div>
+          </div>
+          <p>台語</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>工作經驗</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>網頁程式設計師 / 校園文化</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>快優網(班級網站)開發 <a class="w3-text-blue" href="http://try.eduweb.com.tw/sam/eweb4_dev/system_pagewall/" target="_blank">link</a></p>
+            <p>行動書櫃開發 <a class="w3-text-blue" href="http://library.eduweb.com.tw" target="_blank">link</a></p>
+            <p>預約系統 <a class="w3-text-blue" href="http://ev.shps.tp.edu.tw/shpsewebs/?home=ew00000000002" target="_blank">link</a></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>PHP工程師 / 百加資通</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2015 - Aug 2015</h6>
+          <p>雲端辦公室(內部行政)-EIP開發</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>研究助理 / 中央研究院</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2007 - May 2014</h6>
+          <p>肺癌研究 </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>學歷</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>【博士肆業】國防醫學院--生命科學所</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2007 - May 2014</h6>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>【碩士】長庚醫學院--基礎醫學所</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2007</h6>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>【學士】文化大學--生命科學系</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2001 - 2005</h6><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+<div class="w3-display-container w3-center" style="height:100px;margin-top:45px;">
+        <div class="w3-display-middle" ><h2><b>所有留言</b></h2></div>
+    </div>
+    <hr class="w3-border">
+	{loop $listMsg $msg}
+    <section class="w3-container w3-section" style="max-width:600px;margin:0 auto;">
+        <div class="w3-container w3-teal">
+          <h3>{$msg['gSubject']}</h3>
+            <p><b class="w3-large w3-text-yellow">{$msg['gName']}</b> 於 {$msg['gTime']} 說:</p>
+            <blockquote class="w3-panel w3-leftbar w3-light-grey">
+              <p>{$msg['gContent']}</p>
+            </blockquote>
+			{if $msg['gReply'] != null}
+			<div class="w3-container"><b class="w3-text-yellow">版主</b>回覆:
+				<blockquote class="w3-panel w3-leftbar w3-pink">
+					<p>{$msg['gReply']}</p>
+				</blockquote>
+			<div>
+			{/if}
+        </div>
+    </section>
+	{/loop}
+	<hr class="w3-border">
+<footer class="w3-content w3-teal w3-margin-top" style="max-width:1000px;">
+	<h3 class="w3-container"><b>留言給我</b></h3>
+	<form class="w3-container" action="guestbook/add" method="POST">
+	<p>
+	<label><b>稱呼</b></label>
+	<input class="w3-input w3-border" name="gName" type="text" style="width:30%" required></p>
+	
+	<p>      
+	<label><b>電子信箱</b></label>
+	<input class="w3-input w3-border" name="gEmail" type="email" style="width:30%" required></p>
+	
+	<input class="w3-radio" type="radio" name="gGender" value="male" checked>
+	<label>男</label>
+	
+	<input class="w3-radio" type="radio" name="gGender" value="female">
+	<label>女</label>
+	
+	<p>      
+	<label><b>主旨</b></label>
+	<input class="w3-input w3-border" name="gSubject" type="text" style="width:60%" required></p>
+	
+	<label>留言內容</label>
+	<textarea class="w3-input" name="gContent" rows="6" cols="50" style="width:80%" required></textarea>
+    
+	
+	<p>      
+	<button class="w3-btn w3-red">留 言</button></p>
+	</form>
+</footer>
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <form class="w3-container" action="user/login" method="POST">
+        <div class="w3-section">
+          <label><b>帳號</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="請輸入帳號" name="username" required>
+          <label><b>密碼</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="請輸入密碼" name="password" required>
+          <button class="w3-btn-block w3-teal w3-section w3-padding" type="submit">登入</button>
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">取消</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

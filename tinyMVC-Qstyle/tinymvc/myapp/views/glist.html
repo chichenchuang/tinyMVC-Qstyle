@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Sam's CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "微軟正黑體", sans-serif}
+</style>
+<body class="w3-light-grey">
+	<div class="w3-top">
+	  <div class="w3-bar w3-display-container w3-teal">
+		<div><a href="../" class="w3-bar-item w3-button">Sam's CV</a></div>
+	  </div>
+	</div>
+    <div class="w3-display-container w3-center" style="height:100px;margin-top:45px;">
+        <div class="w3-display-middle" ><h2><b>所有留言</b></h2></div>
+    </div>
+    <hr class="w3-border">
+	{loop $listMsg $msg}
+    <section class="w3-container w3-section" style="max-width:600px;margin:0 auto;">
+        <div class="w3-container w3-teal">
+          <h3>{$msg['gSubject']}</h3>
+            <p><b class="w3-large w3-text-yellow">{$msg['gName']}</b> 於 {$msg['gTime']} 說:</p>
+            <blockquote class="w3-panel w3-leftbar w3-light-grey">
+              <p>{$msg['gContent']}</p>
+            </blockquote>
+			{if $msg['gReply'] != null}
+			<div class="w3-container"><b class="w3-text-yellow">版主</b>回覆:
+				<blockquote class="w3-panel w3-leftbar w3-pink">
+					<p>{$msg['gReply']}</p>
+				</blockquote>
+			<div>
+			{/if}
+			{if $reBtn == null}
+			<div class="w3-container">
+				<div class="w3-display-container" style="height:50px">
+					<div class="w3-display-left"><a href="del?del-btn={$msg['id']}"><button class="w3-button w3-red w3-round-large">刪除</button></a></div>
+					<div class="w3-display-right"><a href="reply?re-btn={$msg['id']}"><button class="w3-btn w3-white w3-border w3-round-large">回覆</button></a></div>
+				</div>
+			</div>
+			{else}
+			<form class="w3-container" action="submitReply?id={$reBtn}" method="POST">
+			<div class="w3-container w3-section">
+			<label>回覆內容</label>
+				<textarea class="w3-input" name="replyContent" rows="6" cols="50" required></textarea>
+			</div>
+			<p><button class="w3-btn w3-red">回覆</button></p>
+			</form>
+			{/if}
+        </div>
+    </section>
+	{/loop}
+	<hr class="w3-border">
+</body>
+</html>
