@@ -1,5 +1,5 @@
 # tinyMVC-Qstyle
-Demo Site：http://104.199.244.218/qtiny/
+Demo Site：http://2web.unaux.com/cv/
 
 參考文件：
 TinyMVC http://www.tinymvc.com/
